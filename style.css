@@ -1,0 +1,170 @@
+body  {
+background: #E9F2F6;
+margin: 0;
+}
+
+#container { 
+direction: rtl;
+width: 780px;
+margin: 0 auto;
+font-family: "Arial";
+background-image:url(images/bkgnd1.png);
+background-repeat: no-repeat;
+/*background-attachment:fixed;*/
+background-position: 100% 0%; 
+}
+
+#header-main {
+padding: 30px 30px 5px 30px;
+/*background: #3b7687;*/
+text-align: center;
+} 
+#header-sub {
+padding: 0px 30px 15px 30px;
+/*background: #3b7687;*/
+text-align: center;
+} 
+#header-main a {
+color: #FFFFFF;
+text-decoration: none;
+font-size: 30px; 
+}
+#header-sub a {
+color: #FFFFFF;
+text-decoration: none;
+font-size: 16px; 
+}
+
+#menu {
+/*background-color: #3b7687; */
+padding: 6px 30px 6px 0;
+text-align:center;
+}
+
+#menu a {
+font-family: "Arial";
+color: #c5d6db;
+text-decoration: none; 
+font-size: 16px; 
+font-weight: bold;
+text-transform: uppercase;
+}
+#menu a.selected {
+color: #FFFFFF;
+font-weight: bold;
+text-decoration: underline;
+}
+
+#menu a:hover {
+text-decoration: underline; 
+background-color: #AAAAAA;
+color: #ecf2f3;
+}
+
+#sidebar {
+float: right;
+width: 220px;
+padding: 35px 0 0 0;
+margin: 0;
+color: #444444;
+text-align: right;
+}
+
+#sidebar a {
+text-decoration: none; 
+color: #262626;
+font-size: 14px;
+}
+
+ul {
+margin-right: 20px;
+margin-left: 20px;
+margin-top: 0px;
+padding-right: 10px;
+}
+li {
+line-height: 16px;
+padding-bottom: 5px;
+}
+li.selected {
+background-color: #CCCCCC;
+font-weight: bold;
+text-decoration: underline;
+}
+
+#sidebar a:hover {
+color: #FFFFFF;
+background-color: #AAAAAA;
+}
+
+#sidebar img {
+border: solid 1px #d6d6d6;
+}
+
+.listing {
+margin:15px 0 25px 0;
+}
+
+h1 {
+margin: 0px;
+color: #3b7687; 
+font-size: 24px; 
+font-weight: bold;
+text-decoration: none;
+}
+
+h2 {
+color: #3b7687;
+font-size: 15px; 
+margin: 20px 0 5px 0;
+}
+
+#main {
+background-image:url(images/bg.gif);
+} 
+
+#text { 
+margin: 0 220px 0 0;
+padding: 25px 30px 30px 30px;
+color: #444444;
+font-family: "Arial";
+font-size: 13px; 
+line-height: 18px;
+text-align: justify;
+} 
+
+#text a {
+color: #3b7687; 
+text-decoration: none;
+}
+
+#text a:hover {
+color: #444444;
+}
+
+#footer {
+padding: 6px 30px 6px 30px;
+background: #d6d6d6; 
+font-family: "Arial";
+color: #444444;
+font-size: 11px;
+text-align: left;
+}
+
+#footer a {
+text-decoration: none; 
+color: #262626;
+}
+
+#footer a:hover {
+color: #666666;
+}
+
+.separator {
+font-size:11px;
+color:#FFFFFF;
+}
+
+.clear {
+clear:both;
+}
