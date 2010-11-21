@@ -1,8 +1,20 @@
 <?xml version='1.0' standalone='yes'?>
-<sections>
+<website>
+ <metadata>
+  <headline>האתר שלי</headline>
+  <subheadline>זוהי כותרת משנית</subheadline>
+  <basedir>http://l8d.org/test</basedir>
+  <lastupdate>
+	<year>2010</year>
+	<month>9</month>
+	<day>20</day>
+  </lastupdate>
+  <copyrights>האתר שלי</copyrights>
+ </metadata>
+ <sections>
  <section>
   <suid>index</suid>
-  <title>בחצר הרב</title>
+  <title>שער</title>
   <data>
 <![CDATA[
 <p>any html content</p>
@@ -11,7 +23,7 @@
   <chapters>
    <chapter>
     <cuid>maamar</cuid>
-    <title>מאמר הרב</title>
+    <title>מאמר</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -20,16 +32,7 @@
    </chapter>
    <chapter>
     <cuid>actual</cuid>
-    <title>אקטואליה בעינייני הפרשה</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>dailypage</cuid>
-    <title>הדף היומי מפי מורנו שליט"א</title>
+    <title>אקטואליה</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -38,7 +41,7 @@
    </chapter>
    <chapter>
     <cuid>avot</cuid>
-    <title>פרקי אבות - שיעור מפי מורינו בפרקי אבות</title>
+    <title>פרקי אבות</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -49,7 +52,7 @@
  </section>
  <section>
   <suid>synagogue</suid>
-  <title>ביהכ"ס יוצאי עיראק ע"ש חיים ויצחק</title>
+  <title>ביהכ"ס</title>
    <data>
    <![CDATA[
 <p>any html content</p>
@@ -58,7 +61,7 @@
   <chapters>
    <chapter>
     <cuid>video</cuid>
-    <title>פיוטים - וידאו</title>
+    <title>וידאו</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -67,7 +70,7 @@
    </chapter>
    <chapter>
     <cuid>music</cuid>
-    <title>פיוטים - מוזיקה</title>
+    <title>מוזיקה</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -76,105 +79,12 @@
    </chapter>
    <chapter>
     <cuid>downloads</cuid>
-    <title>פיוטים - הורדות</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>zecharia</cuid>
-    <title>תמונות - תהילות זכריה</title>
+    <title>הורדות</title>
     <data>
     <![CDATA[
 <iframe src="web/index.html" width=700px height=1300px>
   <p>Your browser does not support iframes.</p>
 </iframe>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>avot</cuid>
-    <title>אמרי אבות - שיעור מפי הר' אליעזר הלוי שליט"א בפרקי אבות</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>parasha</cuid>
-    <title>פרשת השבוע - שיעור מפי הר' יערב אשר הלוי שליט"א</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>shiur</cuid>
-    <title>שיעור מפי הר' יעקב אשר הלוי שליט"א מתקיים בלשכת עו"ד משה כהן הי"ו</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>maamar</cuid>
-    <title>מאמר :השקפת עולם במשקפת של תורה מפי הר' אליעזר הלוי שליט"א</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-  </chapters>
- </section>
- <section>
-  <suid>betyosef</suid>
-  <title>מושב בית יוסף</title>
-   <data>
-   <![CDATA[
-<p>any html content</p>
-   ]]>
-   </data>
-  <chapters>
-   <chapter>
-    <cuid>agada</cuid>
-    <title>שיעור אגדה בבהכ"נ המרכזי</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-   ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>chugbait</cuid>
-    <title>חוג בית - הרצאה בענייני אמונה מפי הרבנים שליט"א</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-  </chapters>
- </section>
- <section>
-  <suid>yardena</suid>
-  <title>מושב ירדנה</title>
-   <data>
-   <![CDATA[
-<p>any html content</p>
-   ]]>
-   </data>
-  <chapters>
-   <chapter>
-    <cuid>halachot</cuid>
-    <title>שיעור הלכות מושב ירדנה בבית רמי אברהם</title>
-    <data>
-    <![CDATA[
     ]]>
     </data>
    </chapter>
@@ -201,3 +111,4 @@
   </chapters>
  </section>
 </sections>
+</website>
