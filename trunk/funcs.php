@@ -112,7 +112,7 @@ function HeaderStr($xml, $r, $t)
             "<head>" . 
             '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />' . "\n" . 
             "<title>TITLE_TOKEN</title>\n" . 
-            '<link rel="stylesheet" type="text/css" href="style.css"/>' . "\n" .
+            '<link rel="stylesheet" type="text/css" href="' . $xml->metadata->template->relpath . '/style.css"/>' . "\n" .
             "</head>\n\n" . 
             "<body>\n\n" .
             '<div id="container">' . "\n\n" .
