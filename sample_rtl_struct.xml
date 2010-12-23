@@ -1,15 +1,15 @@
 <?xml version='1.0' standalone='yes'?>
 <website>
  <metadata>
-  <headline>My Website</headline>
-  <subheadline>This is The Subtitle</subheadline>
-  <basedir>http://l8d.org/1</basedir>
+  <headline>האתר שלי</headline>
+  <subheadline>זוהי כותרת משנית</subheadline>
+  <basedir>http://l8d.org/test</basedir>
   <lastupdate>
 	<year>2010</year>
-	<month>12</month>
-	<day>23</day>
+	<month>9</month>
+	<day>20</day>
   </lastupdate>
-  <copyrights>phpsscms</copyrights>
+  <copyrights>האתר שלי</copyrights>
   <template>
     <relpath>templates/basic_ltr</relpath>
   </template>
@@ -17,7 +17,7 @@
  <sections>
  <section>
   <suid>index</suid>
-  <title>Home</title>
+  <title>שער</title>
   <data>
 <![CDATA[
 <p>any html content</p>
@@ -25,8 +25,8 @@
   </data>
   <chapters>
    <chapter>
-    <cuid>news</cuid>
-    <title>News</title>
+    <cuid>maamar</cuid>
+    <title>מאמר</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -34,8 +34,8 @@
     </data>
    </chapter>
    <chapter>
-    <cuid>about</cuid>
-    <title>About Us</title>
+    <cuid>actual</cuid>
+    <title>אקטואליה</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -43,8 +43,8 @@
     </data>
    </chapter>
    <chapter>
-    <cuid>contact</cuid>
-    <title>Contact Information</title>
+    <cuid>avot</cuid>
+    <title>פרקי אבות</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -54,8 +54,8 @@
   </chapters>
  </section>
  <section>
-  <suid>phpsscms</suid>
-  <title>PHPSSCMS</title>
+  <suid>synagogue</suid>
+  <title>ביהכ"ס</title>
    <data>
    <![CDATA[
 <p>any html content</p>
@@ -63,8 +63,8 @@
    </data>
   <chapters>
    <chapter>
-    <cuid>history</cuid>
-    <title>How It All Started</title>
+    <cuid>video</cuid>
+    <title>וידאו</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -72,8 +72,8 @@
     </data>
    </chapter>
    <chapter>
-    <cuid>status</cuid>
-    <title>Current Status</title>
+    <cuid>music</cuid>
+    <title>מוזיקה</title>
     <data>
     <![CDATA[
 <p>any html content</p>
@@ -81,8 +81,8 @@
     </data>
    </chapter>
    <chapter>
-    <cuid>devel</cuid>
-    <title>Developrs</title>
+    <cuid>downloads</cuid>
+    <title>הורדות</title>
     <data>
     <![CDATA[
 <iframe src="web/index.html" width=700px height=1300px>
@@ -94,8 +94,8 @@
   </chapters>
  </section>
  <section>
-  <suid>bio</suid>
-  <title>Biographical Information</title>
+  <suid>about</suid>
+  <title>אודות האתר</title>
    <data>
    <![CDATA[
 <p>any html content</p>
@@ -104,16 +104,7 @@
   <chapters>
    <chapter>
     <cuid>about</cuid>
-    <title>Current Development Team</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>joinus</cuid>
-    <title>Join Us!</title>
+    <title>אודות האתר</title>
     <data>
     <![CDATA[
 <p>any html content</p>
