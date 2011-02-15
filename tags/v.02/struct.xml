@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- site configuration file and data -->
+<website>
+ <metadata>
+  <headline>My Website</headline>
+  <subheadline>This is The Subtitle</subheadline>
+  <basedir>http://example.org/mysite</basedir>
+  <lastupdate>
+	<year>2010</year>
+	<month>12</month>
+	<day>23</day>
+  </lastupdate>
+  <copyrights>phpsscms</copyrights>
+  <template>
+    <relpath>templates/basic_ltr</relpath>
+  </template>
+  <language>he</language>
+ </metadata>
+ <sections>
+ <section>
+  <suid>index</suid>
+  <title>Home</title>
+  <data>
+<![CDATA[
+<p>any html content</p>
+]]>
+  </data>
+  <chapters>
+   <chapter>
+    <cuid>news</cuid>
+    <title>News</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+   <chapter>
+    <cuid>about</cuid>
+    <title>About Us</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+   <chapter>
+    <cuid>contact</cuid>
+    <title>Contact Information</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+  </chapters>
+ </section>
+ <section>
+  <suid>phpsscms</suid>
+  <title>PHPSSCMS</title>
+   <data>
+   <![CDATA[
+<p>any html content</p>
+   ]]>
+   </data>
+  <chapters>
+   <chapter>
+    <cuid>history</cuid>
+    <title>How It All Started</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+   <chapter>
+    <cuid>status</cuid>
+    <title>Current Status</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+   <chapter>
+    <cuid>devel</cuid>
+    <title>Developrs</title>
+    <data>
+    <![CDATA[
+<iframe src="web/index.html" width="700px" height="1300px">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+    ]]>
+    </data>
+   </chapter>
+  </chapters>
+ </section>
+ <section>
+  <suid>bio</suid>
+  <title>Biographical Information</title>
+   <data>
+   <![CDATA[
+<p>any html content</p>
+   ]]>
+   </data>
+  <chapters>
+   <chapter>
+    <cuid>about</cuid>
+    <title>Current Development Team</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+   <chapter>
+    <cuid>joinus</cuid>
+    <title>Join Us!</title>
+    <data>
+    <![CDATA[
+<p>any html content</p>
+    ]]>
+    </data>
+   </chapter>
+  </chapters>
+ </section>
+</sections>
+</website>
