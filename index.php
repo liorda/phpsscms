@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   include "funcs.php";
 
   GeneratePage();

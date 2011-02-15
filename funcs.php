@@ -1,5 +1,6 @@
-﻿<?php
+<?php
 
+/* main function - generate page according to the GET request parameters */
 function GeneratePage()
 {
 	$s = $_GET['s'];
@@ -13,8 +14,12 @@ function GeneratePage()
 	if (isset($c))
 		ValidifyCnS($c);
 
+	/* load site's sturcture */
 	$xml = simplexml_load_file('struct.xml');
 
+	/* load language data */
+	$lang_xml = simplexml_load_file('lang/' . $xml->metadata->language . '.xml');
+	
 	list($top_str, $r) = TopMenu($xml->sections, $s);
     
 	$top_str .= "\n" . '<div id="main">' . "\n\n";
@@ -23,9 +28,9 @@ function GeneratePage()
 
 	$header_str = HeaderStr($xml, $r, $t);
     
-	$content_str = ContentStr($xml->sections, $r, $t);
+	$content_str = ContentStr($xml->sections, $lang_xml, $r, $t);
     
-	$footer_str = FooterStr($xml);
+	$footer_str = FooterStr($xml, $lang_xml);
 
 	echo $header_str . $top_str . $side_str . $content_str . $footer_str;
 }
@@ -42,19 +47,20 @@ function ValidifyCnS($str)
 	}
 }
 
-function ContentStr($xml, $r, $t)
+function ContentStr($xml, $lang_xml, $r, $t)
 {
 	if (isset($t) && isset($r)) {
 		$str = $xml->section[$r]->chapters->chapter[$t]->data;
-	$title = $xml->section[$r]->chapters->chapter[$t]->title;
+		$title = $xml->section[$r]->chapters->chapter[$t]->title;
 	}
 	elseif (isset($r)) {
 		$str = $xml->section[$r]->data;
-	$title = $xml->section[$r]->title;
+		$title = $xml->section[$r]->title;
 	}
 	else {
-		$str = '<br /><br /><div align="center">הדף לא קיים</div><br /><br />';
-		$title = "הדף לא קיים עדיין";
+		$str = '<br /><br /><div align="center">' . $lang_xml->strings->page_was_not_found
+		. '</div><br /><br />';
+		$title = $lang_xml->strings->page_was_not_found;
 	}
     
 	return '<div id="text">' . "\n" . '<h1>' . $title . "</h1>\n" . $str . "</div>\n\n";
@@ -93,7 +99,7 @@ function SideMenu($xml, $s, $r, $c)
             $cuid = $chapter->cuid;
             $str .= "<li";
             if ($c == $chapter->cuid) {
-                $str .=' "class="selected"';
+                $str .=' class="selected"';
                 $j=$i;
             }
             $str .= '><a href="?s=' . $s . '&amp;c=' . $cuid . '">';
@@ -107,7 +113,7 @@ function SideMenu($xml, $s, $r, $c)
 
 function HeaderStr($xml, $r, $t)
 {
-    $str =  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">' . "\n" .
+    $str =  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">' . "\n" .
             '<html xmlns="http://www.w3.org/1999/xhtml">' . "\n" .
             "<head>" . 
             '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />' . "\n" . 
@@ -130,16 +136,18 @@ function HeaderStr($xml, $r, $t)
     return $str2;
 }
 
-function FooterStr($xml)
+function FooterStr($xml, $lang_xml)
 {
     $str = '<div class="clear"></div>' . "\n\n".
            "</div>\n\n" .
            '<div id="footer">' . "\n" .
-           '&copy; ' . $xml->metadata->lastupdate->year . '  &nbsp;<span class="separator">|</span> &nbsp; ' . "\n" . "כל הזכויות שמורות ל" . $xml->metadata->copyrights . 
+           '&copy; ' . $xml->metadata->lastupdate->year .
+		   '  &nbsp;<span class="separator">|</span> &nbsp; ' . 
+		   "\n" . $lang_xml->strings->all_rights_reserved .
+		   " " . $xml->metadata->copyrights . 
            "</div>\n\n</div>\n\n</body>\n</html>\n\n";
 
     return $str;
 }
 
 ?>
-

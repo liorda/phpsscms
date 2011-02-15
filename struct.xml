@@ -1,4 +1,5 @@
-﻿<?xml version='1.0' standalone='yes' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- site configuration file and data -->
 <website>
  <metadata>
   <headline>My Website</headline>
@@ -13,6 +14,7 @@
   <template>
     <relpath>templates/basic_ltr</relpath>
   </template>
+  <language>he</language>
  </metadata>
  <sections>
  <section>
@@ -85,7 +87,7 @@
     <title>Developrs</title>
     <data>
     <![CDATA[
-<iframe src="web/index.html" width=700px height=1300px>
+<iframe src="web/index.html" width="700px" height="1300px">
   <p>Your browser does not support iframes.</p>
 </iframe>
     ]]>
