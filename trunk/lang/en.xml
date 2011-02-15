@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<lang>
+ <metadata>
+   <name>English</name>
+   <encoding>UTF-8</encoding>
+   <lang_version>1</lang_version>
+ </metadata>
+ <strings>
+  <all_rights_reserved>All Rights Reserved</all_rights_reserved>
+  <page_was_not_found>The requested page is unavailable</page_was_not_found>
+ </strings>
+</lang>
