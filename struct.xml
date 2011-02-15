@@ -1,9 +1,9 @@
-<?xml version='1.0' standalone='yes'?>
+﻿<?xml version='1.0' standalone='yes' encoding='UTF-8'?>
 <website>
  <metadata>
   <headline>My Website</headline>
   <subheadline>This is The Subtitle</subheadline>
-  <basedir>http://l8d.org/1</basedir>
+  <basedir>http://example.org/mysite</basedir>
   <lastupdate>
 	<year>2010</year>
 	<month>12</month>

@@ -1,11 +1,11 @@
-<?xml version='1.0' standalone='yes'?>
+﻿<?xml version='1.0' standalone='yes' encoding='UTF-8'?>
 <lang>
 <metadata>
-  <name>english</name>
-  <encoding>unknown</encoding>
+  <name>Hebrew</name>
+  <encoding>UTF-8</encoding>
   <lang_version>1</lang_version>
 </metadata>
 <strings>
-  <all_rights_reserved>All Rights Reserved</all_rights_reserved>
+  <all_rights_reserved>כל הזכויות שמורות</all_rights_reserved>
 </strings>
 </lang>
