@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /* main function - generate page according to the GET request parameters */
 function GeneratePage()
@@ -15,11 +15,12 @@ function GeneratePage()
 		ValidifyCnS($c);
 
 	/* load site's sturcture */
-	$xml = simplexml_load_file('struct.xml');
+	//$xml = simplexml_load_file('struct.xml');
+	$xml = simplexml_load_file('sample_rtl_struct.xml');
 
 	/* load language data */
-	$lang_xml = simplexml_load_file('lang/' . $xml->metadata->language . '.xml');
-	
+	InitLocalization($xml->metadata->locale);
+
 	list($top_str, $r) = TopMenu($xml->sections, $s);
     
 	$top_str .= "\n" . '<div id="main">' . "\n\n";
@@ -28,13 +29,24 @@ function GeneratePage()
 
 	$header_str = HeaderStr($xml, $r, $t);
     
-	$content_str = ContentStr($xml->sections, $lang_xml, $r, $t);
+	$content_str = ContentStr($xml->sections, $r, $t);
     
-	$footer_str = FooterStr($xml, $lang_xml);
+	$footer_str = FooterStr($xml);
 
-	echo $header_str . $top_str . $side_str . $content_str . $footer_str;
+	echo $header_str;
+	echo $top_str . $side_str . $content_str . $footer_str;
 }
 
+/* start the php-gettext extention */
+function InitLocalization($locale)
+{
+	/* make sure your system support the required locales by running `locale -a` */
+	if (isSet($_GET["locale"])) $locale = $_GET["locale"];
+	putenv("LC_ALL=$locale");
+	setlocale(LC_ALL, $locale);
+	bindtextdomain("messages", "./locale");
+	textdomain("messages");
+}
 /* s and c should be english small characters only! die if not: */
 function ValidifyCnS($str)
 {
@@ -47,7 +59,7 @@ function ValidifyCnS($str)
 	}
 }
 
-function ContentStr($xml, $lang_xml, $r, $t)
+function ContentStr($xml, $r, $t)
 {
 	if (isset($t) && isset($r)) {
 		$str = $xml->section[$r]->chapters->chapter[$t]->data;
@@ -58,9 +70,9 @@ function ContentStr($xml, $lang_xml, $r, $t)
 		$title = $xml->section[$r]->title;
 	}
 	else {
-		$str = '<br /><br /><div align="center">' . $lang_xml->strings->page_was_not_found
+		$str = '<br /><br /><div align="center">' . _("Page was not found")
 		. '</div><br /><br />';
-		$title = $lang_xml->strings->page_was_not_found;
+		$title = _("Page was not found");
 	}
     
 	return '<div id="text">' . "\n" . '<h1>' . $title . "</h1>\n" . $str . "</div>\n\n";
@@ -136,15 +148,14 @@ function HeaderStr($xml, $r, $t)
     return $str2;
 }
 
-function FooterStr($xml, $lang_xml)
+function FooterStr($xml)
 {
     $str = '<div class="clear"></div>' . "\n\n".
            "</div>\n\n" .
            '<div id="footer">' . "\n" .
-           '&copy; ' . $xml->metadata->lastupdate->year .
-		   '  &nbsp;<span class="separator">|</span> &nbsp; ' . 
-		   "\n" . $lang_xml->strings->all_rights_reserved .
-		   " " . $xml->metadata->copyrights . 
+           $xml->metadata->copyrights . ' &copy; ' . $xml->metadata->lastupdate->year .
+		   ' <span class="separator">|</span> ' . 
+		   _("All rights reserved") .  
            "</div>\n\n</div>\n\n</body>\n</html>\n\n";
 
     return $str;

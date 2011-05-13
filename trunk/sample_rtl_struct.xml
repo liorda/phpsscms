@@ -1,18 +1,20 @@
-<?xml version='1.0' standalone='yes' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- site configuration file and data -->
 <website>
  <metadata>
   <headline>האתר שלי</headline>
   <subheadline>זוהי כותרת משנית</subheadline>
   <basedir>http://l8d.org/test</basedir>
   <lastupdate>
-	<year>2010</year>
-	<month>9</month>
-	<day>20</day>
+	<year>2011</year>
+	<month>5</month>
+	<day>13</day>
   </lastupdate>
   <copyrights>האתר שלי</copyrights>
   <template>
-    <relpath>templates/basic_ltr</relpath>
+    <relpath>templates/basic_rtl</relpath>
   </template>
+  <locale>he_IL.utf-8</locale>
  </metadata>
  <sections>
  <section>

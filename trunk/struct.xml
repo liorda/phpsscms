@@ -6,15 +6,15 @@
   <subheadline>This is The Subtitle</subheadline>
   <basedir>http://example.org/mysite</basedir>
   <lastupdate>
-	<year>2010</year>
-	<month>12</month>
-	<day>23</day>
+	<year>2011</year>
+	<month>05</month>
+	<day>13</day>
   </lastupdate>
   <copyrights>phpsscms</copyrights>
   <template>
     <relpath>templates/basic_ltr</relpath>
   </template>
-  <language>he</language>
+  <locale>en_US</locale>
  </metadata>
  <sections>
  <section>
