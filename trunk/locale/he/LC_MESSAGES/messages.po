@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PHPSSCMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-13 12:04+0200\n"
-"PO-Revision-Date: 2011-05-13 12:05+0200\n"
+"POT-Creation-Date: 2011-05-14 13:16+0200\n"
+"PO-Revision-Date: 2011-05-14 13:16+0200\n"
 "Last-Translator: Lior David <liorda@gmail.com>\n"
 "Language-Team: Lior David <liorda@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,10 @@ msgstr "הדף אינו קיים"
 #: ../../../funcs.php:158
 msgid "All rights reserved"
 msgstr "כל הזכויות שמורות"
+
+#: ../../../funcs.php:161
+msgid "Running <a href=\"http://code.google.com/p/phpsscms/\">PHPSSCMS</a> | Valid <a href=\"http://validator.w3.org/check?uri=referer\">HTML</a> and <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
+msgstr "פועל באמצעות <a href=\"http://code.google.com/p/phpsscms/\">PHPSSCMS</a> | קוד <a href=\"http://validator.w3.org/check?uri=referer\">HTML</a> ו-<a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a> תקני"
 
 #~ msgid "hi"
 #~ msgstr "שלום"
