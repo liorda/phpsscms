@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /* main function - generate page according to the GET request parameters */
 function GeneratePage()
@@ -75,7 +75,7 @@ function ContentStr($xml, $r, $t)
 		$title = _("Page was not found");
 	}
     
-	return '<div id="text">' . "\n" . '<h1>' . $title . "</h1>\n" . $str . "</div>\n\n";
+	return '<div id="text">' . "\n" . '<h1>' . $title . "</h1>" . $str . "\n</div>\n\n";
 }
 
 function TopMenu($xml, $s)
@@ -156,7 +156,11 @@ function FooterStr($xml)
            $xml->metadata->copyrights . ' &copy; ' . $xml->metadata->lastupdate->year .
 		   ' <span class="separator">|</span> ' . 
 		   _("All rights reserved") .  
-           "</div>\n\n</div>\n\n</body>\n</html>\n\n";
+           "</div>\n" .
+		   '<div id="system">' . 
+		   _('Running <a href="http://code.google.com/p/phpsscms/">PHPSSCMS</a> | Valid <a href="http://validator.w3.org/check?uri=referer">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>') .
+		   '</div>' .
+		   "\n</div>\n\n</body>\n</html>\n\n";
 
     return $str;
 }
