@@ -44,55 +44,6 @@
     ]]>
     </data>
    </chapter>
-   <chapter>
-    <cuid>avot</cuid>
-    <title>פרקי אבות</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-  </chapters>
- </section>
- <section>
-  <suid>synagogue</suid>
-  <title>ביהכ"ס</title>
-   <data>
-   <![CDATA[
-<p>any html content</p>
-   ]]>
-   </data>
-  <chapters>
-   <chapter>
-    <cuid>video</cuid>
-    <title>וידאו</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>music</cuid>
-    <title>מוזיקה</title>
-    <data>
-    <![CDATA[
-<p>any html content</p>
-    ]]>
-    </data>
-   </chapter>
-   <chapter>
-    <cuid>downloads</cuid>
-    <title>הורדות</title>
-    <data>
-    <![CDATA[
-<iframe src="web/index.html" width=700px height=1300px>
-  <p>Your browser does not support iframes.</p>
-</iframe>
-    ]]>
-    </data>
-   </chapter>
   </chapters>
  </section>
  <section>
